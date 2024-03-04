@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<route>
+		<id>9</id>
+		<name>CompanyProfile</name>
+		<classname>CompanyProfileController</classname>
+		<uri>/company</uri>
+		<label>Add / Edit / View Company Controller</label>
+	</route>
+	<route>
+		<id>10</id>
+		<name>Placement</name>
+		<classname>PlacementController</classname>
+		<uri>/placement</uri>
+		<label>Add / Edit / View Placement Controller</label>
+	</route>
+	<route>
+		<id>12</id>
+		<name>Error</name>
+		<classname>ErrorController</classname>
+		<uri>/error</uri>
+		<label>Error Page</label>
+	</route>	
+	<route>
+		<id>13</id>
+		<name>Contact</name>
+		<classname>ContactController</classname>
+		<uri>/contact</uri>
+		<label>Contact Page</label>
+	</route>	
+</routes> 

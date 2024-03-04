@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>	
+	<route>
+		<url>/</url>
+		<callback>$this->ProcessHomePageRequest()</callback>
+	</route>	
+	<route>
+		<url>/article</url>
+		<callback>$this->ProcessArticlePageRequest()</callback>
+	</route>
+	<route>
+		<url>/company</url>
+		<callback>$this->ProcessCompanyPageRequest()</callback>
+	</route>
+	<route>
+		<url>/travel</url>
+		<callback>$this->ProcessDestinationPageRequest()</callback>
+	</route>
+	<route>
+		<url>/country</url>
+		<callback>$this->ProcessDestinationPageRequest()</callback>
+	</route>
+	<route>
+		<url>/continent</url>
+		<callback>$this->ProcessDestinationPageRequest()</callback>
+	</route>
+	<route>
+		<url>/search</url>
+		<callback>$this->ProcessSearchResultPageRequest()</callback>
+	</route>
+	<route>
+		<url>/review</url>
+		<filename>./webservices/review_ajax.php</filename>
+	</route>	
+	<route>
+		<url>/enquiry</url>
+		<filename>./webservices/enquiry.php</filename>
+	</route>
+	<route>
+		<url>/search-dispatch</url>
+		<filename>./webservices/searchPanelDispatch_ajax.php</filename>
+	</route>
+</routes>
