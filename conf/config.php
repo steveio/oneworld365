@@ -1,15 +1,15 @@
 <?php
 
 
-ini_set('display_errors',1);
+ini_set('display_errors',0);
 ini_set('log_errors', 1);
 ini_set('error_log', '/www/vhosts/oneworld365.org/logs/app_error.log');
 error_reporting(E_ALL & ~E_NOTICE & ~ E_STRICT);
 
 date_default_timezone_set('Europe/London');
 
-// db connection
-$dsn = array("dbhost" => "localhost","dbuser" => "oneworld365_pgsql", "dbpass" => "bra@zi1","dbname" => "oneworld365_20240218","dbport" => "5432");
+// db connection... (@todo - move into $_CONFIG for consistancy)
+$dsn = array("dbhost" => "localhost","dbuser" => "", "dbpass" => "","dbname" => "","dbport" => "5432");
 
 
 $solr_config = array(
@@ -25,7 +25,7 @@ $solr_config = array(
 define('DEBUG',false);
 define('DEV',FALSE);
 
-define('TEST_EMAIL','steveedwards01@yahoo.co.uk');
+define('TEST_EMAIL','');
 
 /* 0 = none, 1 = error, 2 = debug, 3 = verbose debug */
 define('LOG_PATH',"/www/vhosts/oneworld365.org/logs/web_app.log");
@@ -33,10 +33,11 @@ define('LOG_LEVEL',3);
 
 
 define('HOSTNAME',"oneworld365.org");
-define('BASE_URL','http://admin.'.HOSTNAME);
+define('BASE_URL','https://www.'.HOSTNAME);
 define('WEBSITE',HOSTNAME);
-define('ADMIN_SYSTEM',BASE_URL);
-define('API_URL','http://api.'.HOSTNAME);
+define('ADMIN_SYSTEM_HOSTNAME', 'admin.oneworld365.org');
+define('ADMIN_SYSTEM',"https://www.".ADMIN_SYSTEM_HOSTNAME);
+define('API_URL','https://api.'.HOSTNAME);
 define('CURRENT_SITE', WEBSITE);
 
 define('BASE_PATH','/www/vhosts/oneworld365.org/htdocs');
@@ -70,6 +71,7 @@ define("PROFILE_SUMMERCAMP",5); // company profile
 define("PROFILE_VOLUNTEER_PROJECT",6); // company profile
 define("PROFILE_SEASONALJOBS",7); // company profile
 define("PROFILE_TEACHING",8); // company profile
+define("PROFILE_COURSES",8); // company profile
 
 
 // general content type id - used to fetch related content and by  SOLR for indexing
@@ -155,7 +157,7 @@ define('ERROR_ADD_ACCOUNT_FAILED','Add account failed :');
 /* config params required to make classes work */
 $_CONFIG = array( 
         'site_id' => 0,
-        'url' => 'http://www.oneworld365.org',
+        'url' => 'https://www.oneworld365.org',
         'root_path' => ROOT_PATH,
         'company_table' => 'company',
         'placement_table' => 'profile_hdr',
@@ -203,6 +205,7 @@ define("SQUARE","S");
 
 define("PROFILE_IMAGE",0);
 define("LOGO_IMAGE",1);
+define("PROMO_IMAGE",2);
 
 define("LOGO__DIMENSIONS_MAXWIDTH", 500);
 define("LOGO__DIMENSIONS_MINWIDTH", 100);
