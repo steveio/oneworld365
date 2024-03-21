@@ -8,7 +8,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~ E_STRICT);
 
 date_default_timezone_set('Europe/London');
 
-// db connection... (@todo - move into $_CONFIG for consistancy)
+// db connection... 
 $dsn = array("dbhost" => "localhost","dbuser" => "", "dbpass" => "","dbname" => "","dbport" => "5432");
 
 
@@ -71,7 +71,7 @@ define("PROFILE_SUMMERCAMP",5); // company profile
 define("PROFILE_VOLUNTEER_PROJECT",6); // company profile
 define("PROFILE_SEASONALJOBS",7); // company profile
 define("PROFILE_TEACHING",8); // company profile
-define("PROFILE_COURSES",8); // company profile
+define("PROFILE_COURSES",9); // company profile
 
 
 // general content type id - used to fetch related content and by  SOLR for indexing
