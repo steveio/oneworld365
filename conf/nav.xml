@@ -7,7 +7,7 @@
 		<link>/travel-tour</link> 
 		<subsections>
 			<subsection>
-			<title>Travel Guides</title> 
+			<title>Destinations &amp; Activities</title> 
 			<link>/travel</link> 
 			</subsection>
 			<subsection>
@@ -116,12 +116,12 @@
 
 	<section>
 		<title>JOBS</title> 
-		<desc>Jobs &amp; Work Abroad</desc> 
-		<link>/jobs</link> 
+		<desc>Seasonal Jobs &amp; Working Holidays Abroad</desc> 
+		<link>/seasonal-jobs-working-holidays</link> 
 		<subsections>
 			<subsection>
-			<title>Work Abroad</title> 
-			<link>/jobs</link> 
+			<title>Seasonal Jobs &amp; Working Holidays</title> 
+			<link>/seasonal-jobs-working-holidays</link> 
 			</subsection>
 			<subsection>
 			<title>Au Pair &amp; Nanny Jobs</title> 
