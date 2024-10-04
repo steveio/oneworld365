@@ -58,6 +58,15 @@
 			<title>Yoga</title> 
 			<link>/yoga-retreats</link> 
 			</subsection>
+			<subsection>
+			<title> </title> 
+			<link></link> 
+			</subsection>
+
+			<subsection>
+			<title>Search</title> 
+			<link>/search</link> 
+			</subsection>
 			
 		</subsections>
 	</section>

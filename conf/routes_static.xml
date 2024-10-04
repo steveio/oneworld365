@@ -40,4 +40,8 @@
 		<url>/search-dispatch</url>
 		<filename>./webservices/searchPanelDispatch_ajax.php</filename>
 	</route>
+	<route>
+		<url>/search-router</url>
+		<filename>./webservices/searchPanelRouter_ajax.php</filename>
+	</route>
 </routes>
